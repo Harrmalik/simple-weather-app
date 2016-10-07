@@ -1,0 +1,28 @@
+<section>
+    <div id="container" class="ui segment compact blue">
+        <h2 class="ui header">Buffalo, NY<!-- {{forecast.city.name}}, {{region.region}} -->
+            <div class="ui sub header">
+                Friday October 7th
+            </div>
+        </h2>
+
+        <div class="ui horizontal yellow statistic">
+            <div class="value">
+            77<!-- {{ toFahrenheit(forecast.list[0].main.temp) }} -->
+            </div>
+            <div class="label">
+            <a href ng-click="">F</a> | <a href ng-click="">C</a>
+            </div>
+        </div>
+
+        <div class="ui divider"></div>
+            53 Low | 88 High<!-- <p>{{toFahrenheit(forecast.list[0].main.temp_min) + " |  " + toFahrenheit(forecast.list[0].main.temp_max)}}</p> -->
+        <div class="ui divider"></div>
+
+        <div class="ui basic segment">
+            <!-- {{forecast.list[0].weather[0].description}} -->
+            <!-- <img ng-src="http://openweathermap.org/img/w/{{forecast.list[0].weather[0].icon}}.png" /> -->
+            <p>Beautiful day to listen to summer vibes and relax to cool feeling of the wind</p>
+        </div>
+    </div>
+</section>
