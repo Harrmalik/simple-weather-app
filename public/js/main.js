@@ -12,7 +12,7 @@ app2.controller('MainController', ['$http', '$scope', function($http, $scope) {
   	weather.forecast = {};
   	weather.region = {};
 
-    $http.get("http://ip-api.com/json").success(function(data) {
+    $http.get("https://ip-api.com/json").success(function(data) {
         weather.region = data;
         $http.get( "http://api.openweathermap.org/data/2.5/forecast?q=" + data.city + ",us&mode=json&APPID=" + weatherKey).success(function( data ) {
             weather.forecast = data;
