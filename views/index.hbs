@@ -1,0 +1,27 @@
+<section>
+    <div id="container" class="ui segment compact blue">
+        <h2 class="ui header">{[{forecast.city.name}]}
+            <div class="ui sub header">
+                {[{ forecast.list[0].dt }]}
+            </div>
+        </h2>
+
+        <div class="ui horizontal yellow statistic">
+            <div class="value">
+            <img ng-src="http://openweathermap.org/img/w/{[{forecast.list[0].weather[0].icon}]}.png" />
+            {[{ toFahrenheit(forecast.list[0].main.temp) }]}
+            </div>
+            <div class="label">
+            <a href ng-click="">F</a> | <a href ng-click="">C</a>
+            </div>
+        </div>
+
+        <div class="ui divider"></div>
+            <p>{[{toFahrenheit(forecast.list[0].main.temp_min) + " Low |  " + toFahrenheit(forecast.list[0].main.temp_max) + " High" }]}</p>
+        <div class="ui divider"></div>
+
+        <div class="ui basic segment">
+            {[{forecast.list[0].weather[0].description}]}
+        </div>
+    </div>
+</section>
