@@ -33,23 +33,23 @@ app2.controller('MainController', ['$http', '$scope', function($http, $scope) {
     $scope.setBackground = function(type) {
         switch (type) {
             case 'Clear':
-                document.body.style.backgroundImage = "url('../imgs/clear.jpg')";
+                document.body.style.backgroundImage = "url('imgs/clear.jpg')";
                 break;
 
             case 'Rain':
-                document.body.style.backgroundImage = "url('../imgs/rain.jpg')";
+                document.body.style.backgroundImage = "url('imgs/rain.jpg')";
                 break;
 
             case 'Clouds':
-                document.body.style.backgroundImage = "url('../imgs/cloudy.jpg')";
+                document.body.style.backgroundImage = "url('imgs/cloudy.jpg')";
                 break;
 
             case 'Snow':
-                document.body.style.backgroundImage = "url('../imgs/snow.jpg')";
+                document.body.style.backgroundImage = "url('imgs/snow.jpg')";
                 break;
 
             default:
-                document.body.style.backgroundImage = "url('../imgs/rain.jpg')";
+                document.body.style.backgroundImage = "url('imgs/rain.jpg')";
         }
     }
 
